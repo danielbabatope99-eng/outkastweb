@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OUTKASTSTUDIOS</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1a1a1a, #ff8c00, #ff3cac);
+      background-size: 300% 300%;
+      animation: bgMove 8s ease infinite;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .logo {
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(45deg, #fff, #ffe259, #ffa751);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      max-width: 600px;
+    }
+
+    .services {
+      margin: 40px 0;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px 30px;
+      width: 200px;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .service-card h3 {
+      color: #ffdd00;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #fff;
+      color: #111;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      background: #ffdd00;
+      color: #111;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">OUTKASTSTUDIOS</div>
+  <p>Where bold ideas come alive — branding, design, and motion reimagined for the digital age.</p>
+
+  <div class="services">
+    <div class="service-card">
+      <h3>?? Branding</h3>
+      <p>We craft unique brand identities that connect emotionally and stand out visually.</p>
+    </div>
+    <div class="service-card">
+      <h3>??? Design</h3>
+      <p>Modern, clean, and engaging visuals — from logos to full visual systems.</p>
+    </div>
+    <div class="service-card">
+      <h3>?? Motion</h3>
+      <p>Dynamic animations that tell your story with energy and flair.</p>
+    </div>
+  </div>
+
+  <a href="mailto:danielbabatope99@gmail.com">
+    <button>Contact Us ??</button>
+  </a>
+
+  <footer>© 2025 OUTKASTSTUDIOS — Designed with ?? by Outkast</footer>
+</body>
+</html>
